@@ -1,0 +1,177 @@
+
+
+
+
+*{box-sizing:border-box}
+
+/* Estilos del header */
+
+#header {
+
+    background-color: rgb(140, 95, 17);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+#header .logo {
+    color: white;
+    background-color: black;
+    padding: -2%;
+    padding-right: 0px;
+    border-radius: 1000px;
+    position: relative;
+    left: 20px;
+    
+   
+}
+
+#header .menu ul {
+    list-style: none;
+    display: flex;
+}
+
+#header .menu ul li a {
+    background-color: rgb(195, 168, 137);
+    margin: 0 3px;
+    padding: 10px;
+    border-radius: 50px;
+    border: solid 3px;
+    color: black;
+    text-decoration: none;
+    width: 10px;
+    height: 10px;
+    font-size: px;
+    font-style: inherit;
+
+   
+}
+
+#header .menu ul li a:hover {
+    background-color: rgb(110, 110, 110);
+
+}
+
+
+header .h1{
+    font-size: 25px;
+    position: relative;
+    left: 5px;
+
+}
+    
+div .logo{
+    position: relative;
+    left: 100px;
+}
+
+
+
+
+
+
+/* -----------------estilos del main----------------- */
+
+
+
+
+
+ .imagencontainer{
+    background: rgb(245, 209, 127);
+    border-radius: 10px;
+    justify-content: space-between  ;
+    align-items: flex-end;
+    display: flex;
+    height: auto auto
+;
+
+    
+}
+
+
+ .flex-imagen img {
+
+     border-radius: 100px;
+     padding: 50px;
+     justify-content:center ;
+     position: relative;
+   
+ }
+
+
+
+
+
+/* grids prueba */
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto;
+   
+ }
+
+.flex-imagen{
+
+    display: grid;
+    grid-template-columns: 1 1 1;
+    gap: 5px;
+    grid-template-rows: auto auto auto;
+    align-items: center;
+
+
+}
+
+
+
+
+
+.texto{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(187, 121, 0);
+    padding: 20px;
+    gap: 20px;
+}
+ 
+ 
+/* responsive */
+@media (max-width: 576px){
+
+    #header {
+        background-color: antiquewhite;
+        justify-content: space-between;
+        
+    }
+
+    .h1{
+        padding: 30px;
+    }
+    
+    flex-imagen{
+        display: flex;
+        align-items: center;
+        columns: 1;
+    }
+
+    .imagencontainer
+        {display: grid;
+        grid-template-columns: 1 1 1;
+        gap: 5px;
+        grid-template-rows: auto auto auto;
+        align-items: center;}
+}
+
+
+
+
+
+
+
+
+
