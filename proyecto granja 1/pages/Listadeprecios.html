@@ -4,28 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/Logo MG (4).png">
     <title>Lista de precios</title>
     <link rel="stylesheet" href="../css/ejemplo.css">
+
+
+
+    <!-- fuentes -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;1,500&family=Righteous&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+
+
   <header id="header">
 
-    <div class="Logo">
 
-        <img src="../img/Logo MG (4).png" alt="Logo"
-        height="200px"
-        >
-
-            
-
+    
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle expand-lg bg-dark p-1 g-3 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        
+      </button>
+      <ul class="dropdown-menu b-dark " aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="../index.html">Inicio</a></li>
+        <li><a class="dropdown-item" href="../pages/contacto.html">Nosotros</a></li>
+        <li><a class="dropdown-item" href="../pages/Productos.html">Productos</a></li>
+        <li><a class="dropdown-item" href="../pages/sucursales.html">Sucursales</a></li>
+        <li><a class="dropdown-item" href="../pages/Listadeprecios.html">Lista de precios</a></li>
+      </ul>
     </div>
+   
 
 
-    <h1>Nuestra historia</h1>   
 
+    <div class="logo">
+      <img src="../img/Logo MG (4).png" alt=""
+      width="150px"
+      height="150px">
+      
 
+     
+
+      
+  </div>
+
+  <h1>Lista de precios</h1>   
+      
+
+  </div>
+  <nav class="menu">
+      <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../pages/contacto.html">Nosotros</a></li>
+          <li><a href="../pages/Productos.html">Productos</a></li>
+          <li><a href="../pages/sucursales.html">Sucursales</a></li>
+          <li><a href="../pages/Listadeprecios.html">Precios</a></li>  
+         
+        </ul>
 
    </header> 
 
@@ -34,64 +83,82 @@
     <br><br><br>
 
 
-       <nav class="menu">
-
-           <a href="../index.html">Regresar al menu principal</a> 
-           <br><br><br>
- 
+       <h2>TENEMOS LOS MEJORES PRECIOS</h2>
+ <BR></BR>
     </nav>
 
-        <table class="default" {
-            border="5px solid black"}>
-
-            <tr>
-          
-              <th>Prodcto</th>
-         
-              <th>Precio</th>
-
-              <th>Stock</th>
-
-          
-            </tr>
-          
-            <tr>
-          
-              <td>Carne</td>
-          
-              <td>$1000</td>
-
-              <td>si</td>
-          
-          
-            </tr>
-          
-            <tr>
-          
-              <td>Pollo</td>
-          
-              <td>$500</td>
-                
-              <td>Si</td>
-          
-            </tr>
-          
-            <tr>
-          
-              <td>Cerdo</td>
-          
-              <td>$700</td>
-
-              <td>No</td>
-          
-          
-            </tr>
-          
-          </table>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="../img/calecita/1.jpg" class="d-block w-100 p-10" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="../img/calecita/2.jpg" class="d-block w-100  p-10" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/calecita/3.jpg" class="d-block w-100  p-10" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/calecita/4.jpg" class="d-block w-100  p-10" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/calecita/5.jpg" class="d-block w-100 p-10" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/calecita/6.jpg" class="d-block w-100  p-10" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/calecita/7.jpg" class="d-block w-100  p-10" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/calecita/8.jpg" class="d-block w-100  p-10" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
          <br><br><br><br>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-
-          <footer>MG carniceria y granja Ⓡ</footer>
+      <footer>
+        <div class="contenedor-footer">
+  
+    
+        <h2>Contacto</h2>
+       <h6>WP: 1150390375</h6>
+       <h6>IG: @granja.mg</h6>
+       <h6>Mail: contacto.mgranja@gmail.com </h6>
+  
+        <h2>Medios de pago</h2>
+  
+       <div class="text-center-xs">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/visa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/visa@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="visa" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mastercard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mastercard@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="mastercard" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/amex@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/amex@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="amex" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/diners@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/diners@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="diners" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/banelco@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/banelco@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="ar_banelco" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/cabal@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/cabal@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="ar_cabal" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/tarjeta-naranja@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/tarjeta-naranja@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="ar_tarjeta-naranja" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/tarjeta-shopping@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/tarjeta-shopping@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="ar_tarjeta-shopping" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mercadopago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/mercadopago@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="mercadopago" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/argencard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/argencard@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="ar_argencard" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/nativa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/nativa@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="nativa" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/cencosud@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/ar/cencosud@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="ar_cencosud" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/pagofacil@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/pagofacil@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="pagofacil" width="48" height="30">
+        <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/rapipago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/rapipago@2x.png" class="js-lazy-loading footer-payship-img lazyloaded" alt="rapipago" width="48" height="30">
+    </div>
+       
+        
+      </div>
+  
+      </footer>
 
 
 </body>

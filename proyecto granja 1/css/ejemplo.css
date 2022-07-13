@@ -6,11 +6,26 @@
 
 /* Estilos del header */
 
-#header {
 
+.contenedor{
+
+
+    width: 97%;
+    max-width: 1700px;
+    margin:10px auto;
+    overflow: hidden;
+    max-width: 100%;
+
+}
+
+#header {
+    gap: 10px;
+    margin: 10px ;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: auto;
     background-color: rgb(140, 95, 17);
-    padding: 20px;
-    display: flex;
+    padding: 10px;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     font-family: sans-serif;
@@ -18,24 +33,36 @@
     background: linear-gradient(to bottom right, rgb(135, 70, 5), rgb(238, 198, 136));
 }
 
-#header .logo {
-    color: white;
-    background-color: black;
-    padding: -2%;
-    padding-right: 0px;
-    border-radius: 1000px;
-    position: relative;
-    left: 20px;
+
+img {
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+
+   }
+
+.logo{
+        max-height: 170px;
+        max-width: 170px;
+        min-width: 70px;
+        min-height:70px;
+
+    }
+       
     
    
-}
+
 
 #header .menu ul {
     list-style: none;
     display: flex;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #header .menu ul li a {
+
+
     background-color: rgb(195, 168, 137);
     margin: 0 3px;
     padding: 10px;
@@ -45,7 +72,6 @@
     text-decoration: none;
     width: 10px;
     height: 10px;
-    font-size: px;
     font-style: inherit;
 
    
@@ -57,17 +83,6 @@
 }
 
 
-header .h1{
-    font-size: 25px;
-    position: relative;
-    left: 5px;
-
-}
-    
-div .logo{
-    position: relative;
-    left: 100px;
-}
 
 
 
@@ -77,81 +92,152 @@ div .logo{
 /* -----------------estilos del main----------------- */
 
 
+.contenedor-carrito-carne{
 
-
-
- .imagencontainer{
-    background: rgb(245, 209, 127);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 30px;
+    padding-left: 5%;
+    gap: 60px;
     border-radius: 10px;
-    justify-content: space-between  ;
-    align-items: flex-end;
-    display: flex;
-    height: auto auto
-;
-
-    
 }
-
-
- .flex-imagen img {
-
-     border-radius: 100px;
-     padding: 50px;
-     justify-content:center ;
-     position: relative;
-   
- }
-
-
 
 
 
 /* grids prueba */
 
-.grid-container {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: auto auto auto;
-   
- }
-
-.flex-imagen{
-
-    display: grid;
-    grid-template-columns: 1 1 1;
-    gap: 5px;
-    grid-template-rows: auto auto auto;
-    align-items: center;
-
-
-}
-
-
-
 
 
 .texto{
+
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 5px;
     grid-template-rows: auto auto auto;
-    background-color: rgb(187, 121, 0);
+    border: solid 2px;
     padding: 20px;
     gap: 20px;
+    justify-content: center;
+    border-radius: 10px;
 }
  
+
+
+/* FORMULARIO */
+
+.contact_form{
+
+
+    padding: 10px;
+    border-style:solid ;
+    border: auto;
+    text-align: center;
+    justify-content: center;
+border-spacing: 10px;
+
+
+}
+
+/* contacto redes */
+
+.contacto1{
+
+
+
+    background-color: rgb(233, 199, 145);
+}
+
+
+
+.mapa1{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.mapa2{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+
+
+footer{
+
+    margin: 10px ;
+    background-color: #e9c791;
+    gap: 10px;
+    font-size: x-large;
+    width: 100%;
+    padding: 10px;
+    max-width: 97%;
+    border-radius: 10px;
+    display: grid  ;
+   
+
+}
+
+
+.text-center-xs{
+
+  
+    
+}
+
+
+
+h1{
+    max-height: 170px;
+    max-width: 170px;
+
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Roboto Slab', serif;
+    gap: 10%;
+    text-align: center;
+
+}
+    
+
+h2{
+    text-align: center;
+    background-color: #89836d; ;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+     
+}
+
+h4{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+h6{
+    text-align: center;
+    text-shadow: 1px;
+     font-size: xx-large;
+     font-family: 'Poppins', sans-serif;
+}
+
+
+
  
 /* responsive */
 @media (max-width: 576px){
 
-    #header {
-        background-color: antiquewhite;
-        justify-content: space-between;
-        
-    }
+  
 
     .h1{
-        padding: 30px;
+        padding: 10px;
     }
     
     flex-imagen{
@@ -166,15 +252,20 @@ div .logo{
         gap: 5px;
         grid-template-rows: auto auto auto;
         align-items: center;}
+
+    #header .menu ul li a
+            {
+                display: none;
+
+            }
 }
 
-/* gradiante */
 
-    
+@media (min-width: 576px){
 
+    .dropdown {
 
-
-
-
-
+        display: none;
+    }
+}
 
