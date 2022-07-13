@@ -1,5 +1,10 @@
 
+
 body{
+
+    background-color: rgb(63, 63, 63);
+
+    
     .contenedor{
 
         background-color: rgb(63, 63, 63);
@@ -22,4 +27,72 @@ body{
                 background-color: blanchedalmond;
             }
     
+            /* maps */
+            
+            $colores: (
+    base: #000,
+    principal: #cdad64,
+    fondo: #666f6c,
+    letra: white,
+
+);
+.muestra-color {
+    background: map-get($colores, fondo);
+    padding: 20px;
+    color:  map-get($colores, letra);;
+}
+
+
+/* extend */
+
+.btn {
+    display: inline;
+    width: 200px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-weight: 700;
+    gap: 10px
+}
+.btn--verde {
+    @extend .btn;
+    background-color: rgb(195, 140, 77);
+    color: white;
+}
+.btn--rojo {
+    @extend .btn;
+    background-color: red;
+    color: white;
+}
+
+
+/* mixins */
+
+@mixin boton {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #333;
+}
+.boton--danger {
+    @include boton;
+    background-color: red;
+}
+
+@mixin boton ($col, $bg) {
+    display: inline-block;
+    padding: 10px;
+    color: $col;
+    background: $bg;
+}
+.boton--alert {
+    @include boton (rgb(216, 164, 103), grey);
+}
+
+
+
+
+
+
+
 }

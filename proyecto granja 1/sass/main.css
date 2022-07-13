@@ -1,3 +1,10 @@
+body {
+  background-color: #3f3f3f;
+  /* maps */
+  /* extend */
+  /* mixins */
+}
+
 body .contenedor {
   background-color: #3f3f3f;
   border-radius: 10px;
@@ -20,5 +27,46 @@ body h1 {
 
 body .texto {
   background-color: blanchedalmond;
+}
+
+body .muestra-color {
+  background: #666f6c;
+  padding: 20px;
+  color: white;
+}
+
+body .btn, body .btn--verde, body .btn--rojo {
+  display: inline;
+  width: 200px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-weight: 700;
+  gap: 10px;
+}
+
+body .btn--verde {
+  background-color: #c38c4d;
+  color: white;
+}
+
+body .btn--rojo {
+  background-color: red;
+  color: white;
+}
+
+body .boton--danger {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #333;
+  background-color: red;
+}
+
+body .boton--alert {
+  display: inline-block;
+  padding: 10px;
+  color: #d8a467;
+  background: grey;
 }
 /*# sourceMappingURL=main.css.map */
